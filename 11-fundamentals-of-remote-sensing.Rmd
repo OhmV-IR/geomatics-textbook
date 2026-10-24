@@ -674,7 +674,7 @@ needs of your study.
 ```
 ```{r 11-radiometric, fig.cap = fig_cap, echo = FALSE}
     fig_cap <- paste("Discernable values of sensors with 1, 2 and 4 bot radiometric resolutions. Created by Paul Hacker CC BY-SA 4.0.")
-    knitr::include_graphics(here::here("images", "11-radiometric-res.png"))
+    knitr::include_graphics(here::here("images", "11-radiometric-res.PNG"))
 ```
 
 ## Key Applications

@@ -562,7 +562,7 @@ Depending on the schema of the two relations being joined, the number of tuples 
 
 ```{r 5-join-cardinality, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Cardinality of joins between relations R and S. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "05-join-cardinality.png"))
+    knitr::include_graphics(here::here("images", "05-join-cardinality.PNG"))
 ```
 <br/>
 

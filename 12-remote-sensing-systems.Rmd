@@ -120,7 +120,7 @@ Most, if not all, lenses on optical systems for remote sensing are **spherical l
 
 fig_cap <- paste("Measuring the radius of curvature for a convex optical surface. Claire Armour. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)")
 
-knitr::include_graphics(here::here("images", "12-ROC_convex.png"))
+knitr::include_graphics(here::here("images", "12-RoC_convex.png"))
 
 ```
 
@@ -130,7 +130,7 @@ knitr::include_graphics(here::here("images", "12-ROC_convex.png"))
 
 fig_cap <- paste("Measuring the radius of curvature for a concave optical surface. Claire Armour. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)")
 
-knitr::include_graphics(here::here("images", "12-ROC_concave.png"))
+knitr::include_graphics(here::here("images", "12-RoC_concave.png"))
 
 ```
 

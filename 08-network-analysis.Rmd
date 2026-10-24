@@ -1,4 +1,4 @@
-```{r setup, include=FALSE}
+```{r 8-setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(igraph)
 library(rgdal)

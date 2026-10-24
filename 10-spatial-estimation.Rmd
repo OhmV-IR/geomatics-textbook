@@ -1009,7 +1009,6 @@ Sill<-c("2338.27","2995.05","2980.05","2994.05")
 Partial_sill<-c("1785.56","4446.62","2966.37","2994.05")
 Sill_to_Sill<-c("0.76","1.00","0.99","1.00")
 summary<-data.frame(Model,Range,Nugget,Sill,Partial_sill,Sill_to_Sill)
-View(summary)
 knitr::kable(summary, caption =NULL)
 ```
 

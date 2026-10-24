@@ -52,7 +52,7 @@ Here is a simple thought experiment to consider. Suppose you are trying to measu
 
 ```{r 2-height, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Diagram for measuring height above a datum. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-height.png"))
+    knitr::include_graphics(here::here("images", "02-height.PNG"))
 ```
 <br/>
 
@@ -70,7 +70,7 @@ A **geodetic vertical datum** is one that describes the Earth's shape in the sim
 
 ```{r 2-geodetic-datum, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Spherical geodetic datum. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-geodetic-datum.png"))
+    knitr::include_graphics(here::here("images", "02-geodetic-datum.PNG"))
 ```
 <br/>
 
@@ -78,7 +78,7 @@ There are many different ellipsoids that have been defined and are currently in 
 
 ```{r 2-sphere-ellipsoid, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Sphere versus ellispoid. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-sphere-ellipsoid.png"))
+    knitr::include_graphics(here::here("images", "02-sphere-ellipsoid.PNG"))
 ```
 <br/>
 
@@ -95,7 +95,7 @@ A **tidal vertical datum** is likely one that you are familiar with. The premise
 
 ```{r 2-tidal-datum, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Conceptual tidal datum for Canada. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-tidal-datum.png"))
+    knitr::include_graphics(here::here("images", "02-tidal-datum.PNG"))
 ```
 <br/>
 
@@ -112,7 +112,7 @@ H = h - N
 $$
 ```{r 2-H-h-N, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Orthometric Height (H) is the ellipsoidal height (h) less the geoid height (N). Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-H-h-N.png"))
+    knitr::include_graphics(here::here("images", "02-H-h-N.PNG"))
 ```
 <br/>
 
@@ -120,7 +120,7 @@ To illustrate the concept of a gravimetric datum, suppose we constructed a large
 
 ```{r 2-geoid-tunnel, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Thought experiment showing where water would be at rest within a tunnel through the geoid due to the equipotential force of gravity (g). Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-geoid-tunnel.png"))
+    knitr::include_graphics(here::here("images", "02-geoid-tunnel.PNG"))
 ```
 <br/>
 
@@ -138,8 +138,8 @@ library(raster)
 ```
 
 ``` {r echo=F}
-countries <- rgdal::readOGR("Data/02/canada.geojson", verbose=F)
-r <- raster("Data/02/CGG2013_minus_HT21997_meters.tif")
+countries <- rgdal::readOGR("data/02/canada.geojson", verbose=F)
+r <- raster("data/02/CGG2013_minus_HT21997_meters.tif")
 p <- brewer.pal(11,"RdYlBu")
 pal <- colorNumeric(p, values(r), na.color = "transparent")
 ```
@@ -178,7 +178,7 @@ For most of your life, you have probably believed that there is a singular combi
 
 ```{r 2-geocentric-geodetic-latitude, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Geocentric versus geodetic latitude. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-geocentric-geodetic-latitude.png"))
+    knitr::include_graphics(here::here("images", "02-geocentric-geodetic-latitude.PNG"))
 ```
 <br/>
 
@@ -211,7 +211,7 @@ So how do we use this tool? The quotient between a line projected onto a map $a$
 
 ```{r 2-reference-indicatrix, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Reference Tissot Indicatrix. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-reference-indicatrix.png"))
+    knitr::include_graphics(here::here("images", "02-reference-indicatrix.PNG"))
 ```
 <br/>
 
@@ -219,7 +219,7 @@ Let us assume that $a = b = 1$. Then, the reference indicatrix has the following
 
 ```{r 2-reference-equivalent, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Equivalent Tissot Indicatrix. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-equivalent-indicatrix.png"))
+    knitr::include_graphics(here::here("images", "02-equivalent-indicatrix.PNG"))
 ```
 <br/>
 
@@ -229,7 +229,7 @@ If $\frac{a}{a'}×\frac{b}{b'}>1$, then we can conclude that the projection is *
 
 ```{r 2-conformal-indicatrix, fig.cap = fig_cap, out.width= "75%", echo = FALSE}
     fig_cap <- paste("Conformal Tissot Indicatrix. Pickell, CC-BY-SA-4.0.")
-    knitr::include_graphics(here::here("images", "02-conformal-indicatrix.png"))
+    knitr::include_graphics(here::here("images", "02-conformal-indicatrix.PNG"))
 ```
 <br/>
 

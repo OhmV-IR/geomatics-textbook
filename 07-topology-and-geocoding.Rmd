@@ -27,7 +27,7 @@ Vertex, Node, Pseudonode, Dangle, Planar Topology, Non-Planar Topology, Geocodin
 **Topology** describes the relationships of spatial data. This is a very broad definition that encompasses the wide range of possible arrangements of spatial data in practice. If we drill down into this concept, topology is really what allows us undertake specific types of analysis that requires or expects spatial data to behave in a certain way. If you think about the feature geometries that we have at our disposal, then there are no fewer than nine combinations of how these geometries can interact as illustrated in Figure 7.X below.
 
 [Chart showing combinations of point, line, and polygon geometries.]
-```{r 7-geometry-combinations, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
+```{r 7-geometry-combinations, eval=FALSE, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
 fig_cap <- paste("Caption here. Author, CC-BY-SA-4.0.")
 knitr::include_graphics("images/07-geometry-combinations.png")
 ```
@@ -62,7 +62,7 @@ Some examples of adjacency and overlap topological rules:
 As we have seen from Chapter 3, lines are often used to represent phenomena that flow, so intersection and connection are important concepts for these representations. Important to understanding how connection and intersection work in planar topology, we need to understand that lines are comprised of a set of vertices and nodes. A **node** is simply the terminating vertex in a set of vertices for a line. For example, suppose the line segment $A$ has a set of vertices, $[[1,0],[1,3],[1,5]]$. Then the nodes for $A$ are $[1,0]$ and $[1,5]$. Since nodes define the end points of a line segment, they are key to enforcing connection rules. We will look at network analysis in more detail in the next chapter. For now, let us consider two different networks that can help us conceptualize some fundamental line topology using nodes.
 
 [plot showing line segment A]
-```{r 7-, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
+```{r 7-placeholder-1, eval=FALSE, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
 fig_cap <- paste("Caption here. Author, CC-BY-SA-4.0.")
 knitr::include_graphics("images/07-.png")
 ```
@@ -70,7 +70,7 @@ knitr::include_graphics("images/07-.png")
 A network of streams and rivers is based on the hydrological knowledge system that explains how water moves over a terrain surface. In both theory and practice, we know that water flows from higher elevations to lower elevations with limited expections. Thus, we expect that streams will connect with other streams and continue to flow towards some outlet such as an ocean. **Connection** refers to the fact that the endpoint node of one stream will fall somewhere on another stream segment. Where two line segments come together, it is possible for one segment $A$ to "undershoot" the other segment $B$, resulting in the end node of segment $A$ appropriately named a **dangle** and a loss of connection. As well, **pseudonodes** can occur when a node does not actually terminate a line segment at a junction, for example, between two streams or roads.
 
 [image showing pseudonode, connection, dangle]
-```{r 7-, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
+```{r 7-placeholder-2, eval=FALSE, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
 fig_cap <- paste("Caption here. Author, CC-BY-SA-4.0.")
 knitr::include_graphics("images/07-.png")
 ```
@@ -78,7 +78,7 @@ knitr::include_graphics("images/07-.png")
 Dangles are the opposite case to **intersections**, which occur when two line segments cross each other. With planar topology, intersections must be modeled with a shared node representing the intersection location. For example, suppose line segment $B$ has a set of vertices, $[[0,1],[2,1],[4,1]]$. If line segments $A$ (defined above) and $B$ are mapped together, then they will intersect at $[1,1]$, which is not a vertex represented in either segment. Thus, the intersection of $A$ and $B$ with planar topology would yield four new segments: $C=[[1,0],[1,1]]$, $D=[[0,1],[1,1]]$, $E=[[1,1],[1,3],[1,5]]$, and $E=[[1,1],[2,1],[4,1]]$. Figure \@ref(fig:7-intersection) illustrates how all four of these new segments share the same node $[1,1]$ at the intersection of $A$ and $B$.
 
 [plot showing A and B crossing and the resulting intersection described above]
-```{r 7-, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
+```{r 7-placeholder-3, eval=FALSE, echo=FALSE, out.width = '75%', fig.cap=fig_cap}
 fig_cap <- paste("Caption here. Author, CC-BY-SA-4.0.")
 knitr::include_graphics("images/07-.png")
 ```

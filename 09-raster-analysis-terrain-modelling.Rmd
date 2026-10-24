@@ -383,7 +383,7 @@ $$
 TWI=ln\frac{a×100}{tan(b)}
 $$
 
-```{r setup, include=FALSE}
+```{r 9-setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(leaflet)
 library(raster)

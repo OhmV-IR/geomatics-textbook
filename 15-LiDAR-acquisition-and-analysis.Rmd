@@ -187,7 +187,7 @@ When creating a DEM from a LiDAR point cloud, there are a few important consider
 
 ```{r 15-las-dem, fig.cap = fig_cap, out.width="70%", echo = FALSE}
 fig_cap <- paste("A digital elevation model (DEM) produced from LiDAR. (Du Toit, CC-BY-4.0).")
-knitr::include_graphics(here::here("images", "15-las-dem.png"))
+knitr::include_graphics(here::here("images", "15-las-DEM.png"))
 ```
 
 ### Digital Surface Model and Canopy Height Models
